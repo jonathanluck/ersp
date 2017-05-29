@@ -1,4 +1,5 @@
 <head>
+<script src="jquery-3.2.1.min.js"></script>
 <style>
 body{
 	background-color:#afafaf;
@@ -62,6 +63,11 @@ body{
 }
 
 </style>
+<script>
+setInterval(() =>{
+	$.get("data.json", function(data){console.log(data[6])});
+}, 250);
+</script>
 </head>
 
 
